@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    max-width: 900px;
+  }
+  
+  .table {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #343a40;
+  }
+  .logo-placeholder {
+    height: 100px;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  /* You can add global styles to this file, and also import other style files */

@@ -1,0 +1,30 @@
+<div class="container mt-4">
+    <h2 class="text-center mb-4">New Client</h2>
+    <form (ngSubmit)="crearCliente()" class="p-4 border rounded bg-light shadow">
+        <div class="form-group">
+            <label for="sharedKey">Shared Key:</label>
+            <input type="text" id="sharedKey" class="form-control" [(ngModel)]="cliente.sharedKey" name="sharedKey"
+                required minlength="3" />
+        </div>
+
+        <div class="form-group">
+            <label for="name">Business ID:</label>
+            <input type="text" id="name" class="form-control" [(ngModel)]="cliente.name" name="name" required
+                minlength="3" />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" [(ngModel)]="cliente.email" name="email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" class="form-control" [(ngModel)]="cliente.phone" name="phone" required
+                pattern="^\d{10}$" />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Create Client</button>
+    </form>
+</div>
